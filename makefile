@@ -6,10 +6,10 @@ writetitle:
 	echo "# Unix is cool" >> $(filename)
 
 writedatetime: 
-	echo  "###### $$(date '+%d/%m/%Y %H:%M:%S')" >> $(filename)
+	echo  "###### Now: $$(date '+%d/%m/%Y %H:%M:%S')" >> $(filename)
 
 writenumberoflinesofcode:  
-	echo "###### $$(wc -l guessinggame.sh | awk '{print $$1}')" >> $(filename)
+	echo "###### Lines: $$(wc -l guessinggame.sh | awk '{print $$1}')" >> $(filename)
 
 producereadme: clean
 	touch $(filename)
