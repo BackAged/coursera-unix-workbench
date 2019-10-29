@@ -3,7 +3,7 @@ filename="README.md"
 done: producereadme writetitle writedatetime writenumberoflinesofcode
 
 writetitle: 
-	echo "Unix is cool" >> $(filename)
+	echo "# Unix is cool" >> $(filename)
 
 writedatetime: 
 	echo $$(date '+%d/%m/%Y %H:%M:%S') >> $(filename)
